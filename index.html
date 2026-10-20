@@ -38,8 +38,8 @@
         <span class="lang-ru" hidden>DevOps/SRE, 10+ лет в финтехе и крипте — и автор собственных продуктов.</span>
       </p>
       <p class="hero-body">
-        <span class="lang-en">I run infrastructure for crypto exchanges, payment processing and high-traffic media. I also design, build and release my own apps: a gasless self-custody wallet, browser extensions, a crypto payments backend. Infrastructure and product from one person who has done both — open to new challenges.</span>
-        <span class="lang-ru" hidden>Строю и держу инфраструктуру для крипто-бирж, платёжного процессинга и высоконагруженных медиа. И сам проектирую, пишу и выпускаю свои приложения: gasless-кошелёк, браузерные расширения, бэкенд для криптоплатежей. Инфраструктура и продукт от одного человека, который делал и то и другое. Открыт к новым вызовам.</span>
+        <span class="lang-en">I run infrastructure for crypto exchanges, payment processing and high-traffic media. I also design, build and release my own apps: a gasless self-custody wallet, browser extensions, a crypto payments backend, native Mac and iPhone apps, an L7 egress proxy in Go. Infrastructure and product from one person who has done both — open to new challenges.</span>
+        <span class="lang-ru" hidden>Строю и держу инфраструктуру для крипто-бирж, платёжного процессинга и высоконагруженных медиа. И сам проектирую, пишу и выпускаю свои приложения: gasless-кошелёк, браузерные расширения, бэкенд для криптоплатежей, нативные приложения для Mac и iPhone, L7-прокси на Go. Инфраструктура и продукт от одного человека, который делал и то и другое. Открыт к новым вызовам.</span>
       </p>
       <div class="hero-ctas">
         <a class="btn btn--primary" href="#contact">
@@ -175,6 +175,21 @@
         </div>
       </article>
 
+      <!-- lux-l7 -->
+      <article class="flagship">
+        <div class="flagship-head">
+          <h3>lux-l7</h3>
+          <span class="badges"><span class="badge badge--alpha"><span class="lang-en">Pre-alpha</span><span class="lang-ru" hidden>Пре-альфа</span></span></span>
+        </div>
+        <p>
+          <span class="lang-en">L7 egress proxy in Go: clients reach one stable endpoint and name the real upstream per request (header or path), or use a static route table. Optional <code>CONNECT</code> tunnel relays raw TLS without seeing it. Token auth, SSRF guard, allow/deny lists, Prometheus metrics. Stateless, one static binary, container image.</span>
+          <span class="lang-ru" hidden>L7 egress-прокси на Go: клиент ходит в одну стабильную точку и в каждом запросе называет реальный апстрим (заголовком или в пути), либо работает по статической таблице маршрутов. Опциональный <code>CONNECT</code>-туннель пропускает TLS насквозь, не заглядывая внутрь. Токены, защита от SSRF, allow/deny-списки, метрики Prometheus. Без состояния, один статический бинарник, контейнерный образ.</span>
+        </p>
+        <div class="link-row">
+          <a class="tag" href="https://github.com/denisitpro/lux-l7">github.com/denisitpro/lux-l7</a>
+        </div>
+      </article>
+
       <!-- FinSumo -->
       <article class="flagship">
         <div class="flagship-head">
@@ -207,17 +222,49 @@
         </div>
       </article>
 
+      <!-- PassSumo -->
+      <article class="flagship">
+        <div class="flagship-head">
+          <h3>PassSumo</h3>
+          <span class="badges"><span class="badge badge--live">Live</span></span>
+        </div>
+        <p>
+          <span class="lang-en">macOS password manager on the open KeePass KDBX format: local first, no account, the vault stays wherever you put it. AI coding agents can read a secret only after you approve the request.</span>
+          <span class="lang-ru" hidden>Менеджер паролей для macOS на открытом формате KeePass KDBX: локально, без аккаунта, хранилище лежит там, куда вы его положили. AI-агенты для кода получают секрет только после вашего подтверждения.</span>
+        </p>
+        <div class="link-row">
+          <a class="tag" href="https://apps.apple.com/app/id6810565641">Mac App Store</a>
+          <a class="tag" href="https://heaven8.com/passsumo">heaven8.com/passsumo</a>
+        </div>
+      </article>
+
+      <!-- Balance Burn -->
+      <article class="flagship">
+        <div class="flagship-head">
+          <h3>Balance Burn</h3>
+          <span class="badges"><span class="badge badge--live">Live</span></span>
+        </div>
+        <p>
+          <span class="lang-en">iOS. Works out the exact set of in-app purchases that brings an Apple Account balance to zero, so the account can be switched to another region.</span>
+          <span class="lang-ru" hidden>iOS. Подбирает точный набор встроенных покупок, который обнуляет баланс Apple Account, чтобы можно было сменить регион.</span>
+        </p>
+        <div class="link-row">
+          <a class="tag" href="https://apps.apple.com/app/id6812244205">App Store</a>
+          <a class="tag" href="https://heaven8.com/balanceburn">heaven8.com/balanceburn</a>
+        </div>
+      </article>
+
       <h2>
-        <span class="lang-en">Also shipped</span>
-        <span class="lang-ru" hidden>Что ещё выпущено</span>
+        <span class="lang-en">In development</span>
+        <span class="lang-ru" hidden>В разработке</span>
       </h2>
       <div class="also-shipped">
         <div class="also-item">
-          <h3>PassSumo</h3>
-          <span class="badge badge--alpha"><span class="lang-en">Alpha</span><span class="lang-ru" hidden>Альфа</span></span>
+          <h3>Notixy</h3>
+          <span class="badge badge--alpha"><span class="lang-en">Coming soon</span><span class="lang-ru" hidden>Скоро</span></span>
           <p>
-            <span class="lang-en">macOS password manager for KeePass KDBX files, everything kept in local files. Alpha, ahead of its first Mac App Store submission. <a href="https://heaven8.com/passsumo">heaven8.com/passsumo</a></span>
-            <span class="lang-ru" hidden>Менеджер паролей для macOS, формат KeePass KDBX, всё хранится в локальных файлах. Альфа, готовится к первой подаче в Mac App Store. <a href="https://heaven8.com/passsumo">heaven8.com/passsumo</a></span>
+            <span class="lang-en">iPhone. Notifications on your terms: a business reaches you only after you subscribe, only in the categories you allow, with quiet hours and a daily limit. <a href="https://heaven8.com/notixy">heaven8.com/notixy</a></span>
+            <span class="lang-ru" hidden>iPhone. Уведомления на ваших условиях: бизнес может написать только после подписки и только в разрешённых категориях, с тихими часами и дневным лимитом. <a href="https://heaven8.com/notixy">heaven8.com/notixy</a></span>
           </p>
         </div>
         <div class="also-item">
@@ -226,14 +273,6 @@
           <p>
             <span class="lang-en">Internet radio player for the macOS menu bar. Building toward its first submission. <a href="https://heaven8.com/deep-happy">heaven8.com/deep-happy</a></span>
             <span class="lang-ru" hidden>Интернет-радио в строке меню macOS. Готовится к первой подаче. <a href="https://heaven8.com/deep-happy">heaven8.com/deep-happy</a></span>
-          </p>
-        </div>
-        <div class="also-item">
-          <h3>Balance Burn</h3>
-          <span class="badge badge--alpha"><span class="lang-en">Coming soon</span><span class="lang-ru" hidden>Скоро</span></span>
-          <p>
-            <span class="lang-en">iOS. Works out the exact set of in-app purchases that brings an Apple Account balance to zero, so the account can be switched to another region.</span>
-            <span class="lang-ru" hidden>iOS. Подбирает точный набор встроенных покупок, который обнуляет баланс Apple Account, чтобы можно было сменить регион.</span>
           </p>
         </div>
       </div>
