@@ -1,0 +1,1 @@
+- [Trivial file: just merge](trivial-file-just-merge.md) — LICENSE/copy/docs: copy, PR, merge, no test runs or long caveats
