@@ -143,6 +143,8 @@ button:focus-visible {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 1.1rem;
   margin-left: auto;
   font-family: var(--font-mono);
@@ -272,7 +274,7 @@ p {
 
 .what-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -361,6 +363,16 @@ p {
 
 .flagship p {
   color: var(--ink-dim);
+}
+
+.flagship ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--ink-dim);
+}
+
+.flagship li + li {
+  margin-top: 0.4rem;
 }
 
 .link-row {
