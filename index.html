@@ -17,9 +17,9 @@
     </a>
     <nav class="site-nav" aria-label="Sections">
       <a href="#what"><span class="lang-en">What I build</span><span class="lang-ru" hidden>Что делаю</span></a>
-      <a href="#work"><span class="lang-en">Work</span><span class="lang-ru" hidden>Проекты</span></a>
+      <a href="#work"><span class="lang-en">Work</span><span class="lang-ru" hidden>Флагманы</span></a>
+      <a href="#projects"><span class="lang-en">Projects</span><span class="lang-ru" hidden>Другие проекты</span></a>
       <a href="#shipped"><span class="lang-en">Also shipped</span><span class="lang-ru" hidden>Также выпущено</span></a>
-      <a href="#lab"><span class="lang-en">In the lab</span><span class="lang-ru" hidden>В лаборатории</span></a>
       <a href="#experience"><span class="lang-en">Experience</span><span class="lang-ru" hidden>Опыт</span></a>
       <a href="#contact"><span class="lang-en">Contact</span><span class="lang-ru" hidden>Контакты</span></a>
     </nav>
@@ -79,8 +79,18 @@
             <span class="lang-ru" hidden>Нативные iOS и macOS.</span>
           </h3>
           <p>
-            <span class="lang-en">Swift 6 with strict concurrency, SwiftUI, SwiftData, StoreKit 2 subscriptions, passkeys, universal links, background tasks. Released to the App Store and the Mac App Store.</span>
-            <span class="lang-ru" hidden>Swift 6, strict concurrency, SwiftUI, SwiftData, подписки на StoreKit 2, passkeys, universal links, фоновые задачи. Выпущено в App Store и Mac App Store.</span>
+            <span class="lang-en">Swift 6 with strict concurrency, SwiftUI, SwiftData, StoreKit 2 subscriptions, passkeys, offline-first sync, background tasks. Released to the App Store and the Mac App Store.</span>
+            <span class="lang-ru" hidden>Swift 6, strict concurrency, SwiftUI, SwiftData, подписки на StoreKit 2, passkeys, офлайн-синхронизация, фоновые задачи. Выпущено в App Store и Mac App Store.</span>
+          </p>
+        </div>
+        <div class="what-card">
+          <h3>
+            <span class="lang-en">Crypto payment gateway.</span>
+            <span class="lang-ru" hidden>Криптоплатёжный шлюз.</span>
+          </h3>
+          <p>
+            <span class="lang-en">USDC acceptance and settlement on Solana and EVM chains: a deposit address per recipient, automatic sweep with the fee split in the same transaction, a CCTP bridge from L2s, an idempotent settlement ledger, withdrawals. Keys encrypted at rest or signed through Circle MPC.</span>
+            <span class="lang-ru" hidden>Приём и расчёты в USDC на Solana и EVM-сетях: свой адрес для каждого получателя, автоматический сбор средств с удержанием комиссии в той же транзакции, мост CCTP из L2, идемпотентный журнал расчётов, вывод средств. Ключи зашифрованы в базе или подписываются через Circle MPC.</span>
           </p>
         </div>
         <div class="what-card">
@@ -104,45 +114,46 @@
         <span class="lang-ru" hidden>Флагманские проекты</span>
       </h2>
 
-      <!-- Notixy -->
+      <!-- Notixy Desk -->
       <article class="flagship">
         <div class="flagship-head">
-          <h3>Notixy</h3>
-          <span class="badges">
-            <span class="badge badge--live">Live</span>
-            <span class="badge badge--alpha"><span class="lang-en">iPhone app coming soon</span><span class="lang-ru" hidden>Приложение для iPhone скоро</span></span>
-          </span>
+          <h3>Notixy Desk</h3>
+          <span class="badges"><span class="badge badge--live">Live</span></span>
         </div>
         <p>
-          <span class="lang-en">A notification platform with two sides. People decide which businesses can reach them: by sender, category, quiet hours and daily limit. Businesses run their clients, calendar and online booking, and notify the people who subscribed.</span>
-          <span class="lang-ru" hidden>Платформа уведомлений с двумя сторонами. Человек решает, какой бизнес может ему писать: по отправителю, категории, тихим часам и дневному лимиту. Бизнес ведёт клиентов, календарь и онлайн-запись и уведомляет тех, кто подписался.</span>
+          <span class="lang-en">A CRM for micro businesses: an appointment calendar, a client book with cards and notes, services, and free-time windows a subscribed client books in the Notixy app. Booking notices and reminders reach the clients through the Notixy app. iPhone app and web desk; Notixy is the client side, with its own iPhone app, web app and backend.</span>
+          <span class="lang-ru" hidden>CRM для микробизнеса: календарь записей, база клиентов с карточками и заметками, услуги и окна свободного времени, которые подписанный клиент бронирует в приложении Notixy. Уведомления о записи и напоминания приходят клиентам через приложение Notixy. Приложение для iPhone и веб-кабинет; Notixy — клиентская сторона со своим приложением для iPhone, веб-приложением и бэкендом.</span>
         </p>
         <ul>
           <li>
-            <strong>Notixy</strong>
-            <span class="lang-en"> for people: iPhone app and a web app with Web Push.</span>
-            <span class="lang-ru" hidden> для людей: приложение для iPhone и веб-приложение с Web Push.</span>
-            <a href="https://notixy.app">notixy.app</a>
-            ·
-            <a href="https://client.notixy.app">client.notixy.app</a>
+            <span class="lang-en"><strong>One product model, checked by the machine.</strong> Booking states, notices, limits and UI wording are written once in CUE; a broken constraint fails the build, and the Go services are checked against the exported model.</span>
+            <span class="lang-ru" hidden><strong>Одна модель продукта, которую проверяет машина.</strong> Состояния записи, уведомления, лимиты и тексты интерфейса описаны один раз на CUE; нарушенное ограничение валит сборку, сервисы на Go сверяются с выгруженной моделью.</span>
           </li>
           <li>
-            <strong>Notixy Desk</strong>
-            <span class="lang-en"> for businesses: iPhone app and web cabinet.</span>
-            <span class="lang-ru" hidden> для бизнеса: приложение для iPhone и веб-кабинет.</span>
-            <a href="https://apps.apple.com/us/app/notixy-desk/id6824988786">App Store</a>
-            ·
-            <a href="https://desk.notixy.app">desk.notixy.app</a>
+            <span class="lang-en"><strong>Notices that cannot be lost.</strong> A booking action and the notices it owes commit in one transaction; a worker delivers them with per-kind expiry and backoff.</span>
+            <span class="lang-ru" hidden><strong>Уведомления, которые не теряются.</strong> Действие с записью и положенные по нему уведомления фиксируются одной транзакцией; воркер доставляет их со сроком годности и паузами по виду уведомления.</span>
           </li>
           <li>
-            <span class="lang-en"><strong>Backend: two Go services on PostgreSQL.</strong> Delivery: consent and limits per subscriber, the message rendered in the recipient's language, sent over APNs and Web Push, both written on the protocols. Business side: a modular monolith for clients, calendar and booking, passkey sign-in, a quota ledger that stays correct when a send is retried.</span>
-            <span class="lang-ru" hidden><strong>Бэкенд: два сервиса на Go и PostgreSQL.</strong> Доставка: согласие и лимиты на каждого подписчика, текст на языке получателя, отправка через APNs и Web Push, оба написаны на протоколах. Сторона бизнеса: модульный монолит — клиенты, календарь, онлайн-запись, вход по passkey, учёт квот, который не ломается на повторе отправки.</span>
+            <span class="lang-en"><strong>Offline-first iPhone app.</strong> The app works on a local copy and syncs by a change counter raised in the database; ids are made on the device, and a client's cancel wins over the owner's queued decision.</span>
+            <span class="lang-ru" hidden><strong>Приложение для iPhone работает офлайн.</strong> Работа идёт с локальной копией, синхронизация — по счётчику изменений, который поднимает база; id создаются на устройстве, отмена от клиента побеждает отложенное решение владельца.</span>
           </li>
           <li>
-            <span class="lang-en">OpenAPI first; each service ships on its own.</span>
-            <span class="lang-ru" hidden>Сначала OpenAPI; каждый сервис выходит отдельно.</span>
+            <span class="lang-en"><strong>Linking a business and a client without exchanging personal data.</strong> The client shows a single-use QR, the business scans it, and the two backends redeem it between themselves.</span>
+            <span class="lang-ru" hidden><strong>Связь бизнеса и клиента без обмена личными данными.</strong> Клиент показывает одноразовый QR, бизнес его сканирует, два бэкенда гасят его между собой.</span>
+          </li>
+          <li>
+            <span class="lang-en"><strong>Passkey-only sign-in.</strong> No passwords, rotating refresh tokens, a demo business without an account.</span>
+            <span class="lang-ru" hidden><strong>Вход только по passkey.</strong> Без паролей, с ротацией refresh-токенов; демо-бизнес без регистрации.</span>
+          </li>
+          <li>
+            <span class="lang-en"><strong>Two Go backends on PostgreSQL</strong>, OpenAPI first, each deploys on its own. The client side delivers over APNs and Web Push, both written on the protocols.</span>
+            <span class="lang-ru" hidden><strong>Два бэкенда на Go и PostgreSQL</strong>, сначала OpenAPI, каждый деплоится отдельно. Клиентская сторона доставляет через APNs и Web Push, оба написаны на протоколах.</span>
           </li>
         </ul>
+        <div class="link-row">
+          <a class="tag" href="https://notixy.app">notixy.app</a>
+          <a class="tag" href="https://apps.apple.com/us/app/notixy-desk/id6824988786">App Store</a>
+        </div>
       </article>
 
       <!-- SigmaTracker -->
@@ -170,32 +181,88 @@
         </div>
       </article>
 
-      <!-- Rate Hub -->
-      <article class="flagship">
-        <div class="flagship-head">
-          <h3>Rate Hub</h3>
-          <span class="badges"><span class="badge badge--live">Live</span></span>
-        </div>
-        <p>
-          <span class="lang-en">Fiat and crypto rates API in Go behind the apps. One collector polls several providers and is the only writer; stateless read replicas serve an in-memory snapshot with an ETag for app cold start. AI agents buy a pack of requests in USDC on Base over x402 and read the same rates over MCP.</span>
-          <span class="lang-ru" hidden>API курсов фиата и крипты на Go для приложений. Один коллектор опрашивает несколько провайдеров и единственный пишет; реплики без состояния отдают снимок из памяти с ETag для холодного старта приложения. AI-агенты покупают пакет запросов в USDC на Base через x402 и читают те же курсы по MCP.</span>
-        </p>
-      </article>
+    </div>
+  </section>
 
-      <!-- lux-l7 -->
-      <article class="flagship">
-        <div class="flagship-head">
-          <h3>lux-l7</h3>
-          <span class="badges"><span class="badge badge--alpha"><span class="lang-en">Pre-alpha</span><span class="lang-ru" hidden>Пре-альфа</span></span></span>
+  <section id="projects">
+    <div class="wrap">
+      <h2>
+        <span class="lang-en">Other projects</span>
+        <span class="lang-ru" hidden>Другие проекты</span>
+      </h2>
+      <p class="lede">
+        <span class="lang-en">Code walkthrough on request.</span>
+        <span class="lang-ru" hidden>Демонстрация кода по запросу.</span>
+      </p>
+      <div class="also-shipped">
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Crypto payment gateway</strong> — custodial USDC acceptance and settlement; settles on Solana mainnet and on Arc testnet; acceptance from Arbitrum and Base over CCTP is built, the running pilot takes Solana-native deposits. Per-recipient deposit addresses, sweep with fee split, a settlement ledger with a state per leg, gas auto-refuel before a bridge burn. TypeScript (Hono, Drizzle, viem), Solidity (Foundry), Next.js. First product on it: tips for waiters by QR.</span>
+            <span class="lang-ru" hidden><strong>Криптоплатёжный шлюз</strong> — кастодиальный приём и расчёты в USDC; расчёты в мейннете Solana и в тестнете Arc; приём из Arbitrum и Base через CCTP написан, в пилоте принимаются депозиты в нативной Solana. Адрес на каждого получателя, сбор средств с удержанием комиссии, журнал расчётов с состоянием каждого шага, автодозаправка газом перед сжиганием в мосту. TypeScript (Hono, Drizzle, viem), Solidity (Foundry), Next.js. Первый продукт на нём — чаевые официантам по QR.</span>
+          </p>
         </div>
-        <p>
-          <span class="lang-en">L7 egress proxy in Go: clients reach one stable endpoint and name the real upstream per request (header or path), or use a static route table. Optional <code>CONNECT</code> tunnel relays raw TLS without seeing it. Token auth, SSRF guard, allow/deny lists, Prometheus metrics. Stateless, one static binary.</span>
-          <span class="lang-ru" hidden>L7 egress-прокси на Go: клиент ходит в одну стабильную точку и в каждом запросе называет реальный апстрим (заголовком или в пути), либо работает по статической таблице маршрутов. Опциональный <code>CONNECT</code>-туннель пропускает TLS насквозь, не заглядывая внутрь. Токены, защита от SSRF, allow/deny-списки, метрики Prometheus. Без состояния, один статический бинарник.</span>
-        </p>
-        <div class="link-row">
-          <a class="tag" href="https://github.com/denisitpro/lux-l7">github.com/denisitpro/lux-l7</a>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Rate Hub</strong> — fiat and crypto rates API in Go. One collector polls several providers and is the only writer; stateless read replicas serve an in-memory snapshot. AI agents buy a pack of requests in USDC on Base over x402 and read the same rates over MCP.</span>
+            <span class="lang-ru" hidden><strong>Rate Hub</strong> — API курсов фиата и крипты на Go. Один коллектор опрашивает несколько провайдеров и единственный пишет; реплики без состояния отдают снимок из памяти. AI-агенты покупают пакет запросов в USDC на Base через x402 и читают те же курсы по MCP.</span>
+          </p>
         </div>
-      </article>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>lux-l7</strong> — L7 egress proxy in Go: the upstream is named per request or taken from a route table; optional <code>CONNECT</code> tunnel, token auth, SSRF guard, Prometheus metrics.</span>
+            <span class="lang-ru" hidden><strong>lux-l7</strong> — L7 egress-прокси на Go: апстрим называется в запросе или берётся из таблицы маршрутов; опциональный <code>CONNECT</code>-туннель, токены, защита от SSRF, метрики Prometheus.</span>
+            <a class="tag" href="https://github.com/denisitpro/lux-l7">github.com/denisitpro/lux-l7</a>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>BitTorrent tracker</strong> in Go, written from scratch.</span>
+            <span class="lang-ru" hidden><strong>BitTorrent-трекер</strong> на Go, написанный с нуля.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>IPv6-only home network</strong> — DNS64 and NAT64, both written in Go.</span>
+            <span class="lang-ru" hidden><strong>Домашняя сеть только на IPv6</strong> — свои DNS64 и NAT64 на Go.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Receive-only mail service</strong> in Go for agents and people: SMTP with DKIM checks, REST and MCP.</span>
+            <span class="lang-ru" hidden><strong>Почтовый сервис только на приём</strong> на Go для агентов и людей: SMTP с проверкой DKIM, REST и MCP.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Torrent hot cache</strong> in Go that feeds an Apple TV.</span>
+            <span class="lang-ru" hidden><strong>Горячий кэш торрентов</strong> на Go для Apple TV.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>tvOS VPN client</strong> (AmneziaWG) with the tunnel in Go.</span>
+            <span class="lang-ru" hidden><strong>VPN-клиент для tvOS</strong> (AmneziaWG) с туннелем на Go.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Mac-to-Mac screen streaming</strong> in Swift.</span>
+            <span class="lang-ru" hidden><strong>Трансляция экрана с Mac на Mac</strong> на Swift.</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>iOS keyboard with offline voice dictation</strong> (whisper.cpp).</span>
+            <span class="lang-ru" hidden><strong>Клавиатура для iOS с офлайн-диктовкой</strong> (whisper.cpp).</span>
+          </p>
+        </div>
+        <div class="also-item">
+          <p>
+            <span class="lang-en"><strong>Menu-bar internet radio</strong> for macOS.</span>
+            <span class="lang-ru" hidden><strong>Интернет-радио в строке меню</strong> macOS.</span>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -249,35 +316,6 @@
     </div>
   </section>
 
-  <section id="lab">
-    <div class="wrap">
-      <h2>
-        <span class="lang-en">In the lab (Go, private)</span>
-        <span class="lang-ru" hidden>В лаборатории (Go, закрытый код)</span>
-      </h2>
-      <div class="also-shipped">
-        <div class="also-item">
-          <p>
-            <span class="lang-en"><strong>BitTorrent tracker</strong> written from scratch.</span>
-            <span class="lang-ru" hidden><strong>BitTorrent-трекер</strong>, написанный с нуля.</span>
-          </p>
-        </div>
-        <div class="also-item">
-          <p>
-            <span class="lang-en"><strong>IPv6-only home network</strong>: DNS64 and NAT64, both written in Go.</span>
-            <span class="lang-ru" hidden><strong>Домашняя сеть только на IPv6</strong>: свои DNS64 и NAT64 на Go.</span>
-          </p>
-        </div>
-        <div class="also-item">
-          <p>
-            <span class="lang-en"><strong>Receive-only mail service</strong> for agents and people: SMTP with DKIM checks, REST and MCP.</span>
-            <span class="lang-ru" hidden><strong>Почтовый сервис только на приём</strong> для агентов и людей: SMTP с проверкой DKIM, REST и MCP.</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="experience" id="experience">
     <div class="wrap">
       <h2>
@@ -311,7 +349,7 @@
         </li>
       </ul>
       <p class="stack">
-        <span class="lang-en"><strong>Backend:</strong> Go · PostgreSQL · Valkey / Redis · OpenAPI · WebAuthn · APNs · Web Push · MCP · Docker</span><span class="lang-ru" hidden><strong>Бэкенд:</strong> Go · PostgreSQL · Valkey / Redis · OpenAPI · WebAuthn · APNs · Web Push · MCP · Docker</span><br>
+        <span class="lang-en"><strong>Backend:</strong> Go · PostgreSQL · Valkey / Redis · OpenAPI · CUE · WebAuthn · APNs · Web Push · MCP · Docker</span><span class="lang-ru" hidden><strong>Бэкенд:</strong> Go · PostgreSQL · Valkey / Redis · OpenAPI · CUE · WebAuthn · APNs · Web Push · MCP · Docker</span><br>
         <span class="lang-en"><strong>Mobile:</strong> Swift 6 · SwiftUI · SwiftData · StoreKit 2 · TypeScript and React for web clients</span><span class="lang-ru" hidden><strong>Мобильная разработка:</strong> Swift 6 · SwiftUI · SwiftData · StoreKit 2 · TypeScript и React для веб-клиентов</span><br>
         <span class="lang-en"><strong>Infrastructure:</strong> Kubernetes · Terraform · Ansible · GitHub Actions · Prometheus · Grafana</span><span class="lang-ru" hidden><strong>Инфраструктура:</strong> Kubernetes · Terraform · Ansible · GitHub Actions · Prometheus · Grafana</span>
       </p>
